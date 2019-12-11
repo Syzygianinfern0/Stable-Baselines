@@ -14,9 +14,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JupyterTrust" id="f580150b-56cc-49e7-8e38-0870fe6e1e21">
     <option name="files">
       <option value="1. Q Table.ipynb" />
+      <option value="2. DQN.ipynb" />
     </option>
   </component>
   <component name="ProjectId" id="1Up732E09mpAY5dNOZIoOYYvBpn" />
@@ -27,7 +31,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576041479511</updated>
-      <workItem from="1576041482234" duration="3591000" />
+      <workItem from="1576041482234" duration="6839000" />
     </task>
     <servers />
   </component>
@@ -65,22 +72,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="276" key="GridCell.Tab.0.bottom" timestamp="1576045356127">
+    <state x="566" y="118" width="777" height="806" key="CommitChangelistDialog2" timestamp="1576051770094">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1878" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576045356127" />
-    <state width="1878" height="276" key="GridCell.Tab.0.center" timestamp="1576045356127">
+    <state x="566" y="118" width="777" height="806" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576051770094" />
+    <state width="1878" height="276" key="GridCell.Tab.0.bottom" timestamp="1576045697541">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1878" height="276" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576045356127" />
-    <state width="1878" height="276" key="GridCell.Tab.0.left" timestamp="1576045356126">
+    <state width="1878" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576045697541" />
+    <state width="1878" height="276" key="GridCell.Tab.0.center" timestamp="1576045697539">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1878" height="276" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576045356126" />
-    <state width="1878" height="276" key="GridCell.Tab.0.right" timestamp="1576045356127">
+    <state width="1878" height="276" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576045697539" />
+    <state width="1878" height="276" key="GridCell.Tab.0.left" timestamp="1576045697539">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1878" height="276" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576045356127" />
+    <state width="1878" height="276" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576045697539" />
+    <state width="1878" height="276" key="GridCell.Tab.0.right" timestamp="1576045697540">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state width="1878" height="276" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576045697540" />
     <state width="1878" height="340" key="GridCell.Tab.1.bottom" timestamp="1576044650163">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
