@@ -1,0 +1,87 @@
+# Algorithm
+![algo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUw7rRnwuWNtEyKIkgQr1vKX_jyuZc-eBjyX5HMm5-EqUEd47cFQ&s)
+
+# Result
+```
+0 episode | score: 13.00 | epsilon: 1.00000
+10 episode | score: 24.55 | epsilon: 1.00000
+20 episode | score: 24.19 | epsilon: 1.00000
+30 episode | score: 21.71 | epsilon: 1.00000
+40 episode | score: 20.29 | epsilon: 1.00000
+50 episode | score: 20.08 | epsilon: 0.78101
+60 episode | score: 19.62 | epsilon: 0.74341
+70 episode | score: 20.37 | epsilon: 0.70764
+80 episode | score: 20.27 | epsilon: 0.67362
+90 episode | score: 19.97 | epsilon: 0.64125
+100 episode | score: 19.56 | epsilon: 0.61047
+110 episode | score: 18.76 | epsilon: 0.58118
+120 episode | score: 19.98 | epsilon: 0.55332
+130 episode | score: 20.35 | epsilon: 0.52683
+140 episode | score: 20.76 | epsilon: 0.50162
+150 episode | score: 21.00 | epsilon: 0.47764
+160 episode | score: 21.20 | epsilon: 0.45484
+170 episode | score: 21.11 | epsilon: 0.43314
+180 episode | score: 21.81 | epsilon: 0.41250
+190 episode | score: 23.31 | epsilon: 0.39287
+200 episode | score: 25.78 | epsilon: 0.37420
+210 episode | score: 28.94 | epsilon: 0.35644
+220 episode | score: 31.73 | epsilon: 0.33954
+230 episode | score: 32.85 | epsilon: 0.32347
+240 episode | score: 33.56 | epsilon: 0.30818
+250 episode | score: 34.48 | epsilon: 0.29364
+260 episode | score: 35.66 | epsilon: 0.27981
+270 episode | score: 36.23 | epsilon: 0.26665
+280 episode | score: 36.02 | epsilon: 0.25413
+290 episode | score: 35.53 | epsilon: 0.24222
+300 episode | score: 34.80 | epsilon: 0.23090
+310 episode | score: 36.63 | epsilon: 0.22013
+320 episode | score: 42.99 | epsilon: 0.20988
+330 episode | score: 42.20 | epsilon: 0.20013
+340 episode | score: 42.77 | epsilon: 0.19086
+350 episode | score: 61.52 | epsilon: 0.18204
+360 episode | score: 78.74 | epsilon: 0.17365
+370 episode | score: 98.20 | epsilon: 0.16566
+380 episode | score: 117.96 | epsilon: 0.15807
+390 episode | score: 117.68 | epsilon: 0.15085
+400 episode | score: 128.29 | epsilon: 0.14398
+410 episode | score: 139.36 | epsilon: 0.13745
+420 episode | score: 148.59 | epsilon: 0.13123
+430 episode | score: 159.10 | epsilon: 0.12532
+440 episode | score: 167.84 | epsilon: 0.11970
+450 episode | score: 158.21 | epsilon: 0.11435
+460 episode | score: 151.40 | epsilon: 0.10926
+470 episode | score: 143.46 | epsilon: 0.10442
+480 episode | score: 123.65 | epsilon: 0.09981
+490 episode | score: 123.82 | epsilon: 0.09543
+500 episode | score: 112.51 | epsilon: 0.09126
+510 episode | score: 97.09 | epsilon: 0.08730
+520 episode | score: 76.95 | epsilon: 0.08353
+530 episode | score: 66.58 | epsilon: 0.07994
+540 episode | score: 57.14 | epsilon: 0.07653
+550 episode | score: 46.77 | epsilon: 0.07329
+560 episode | score: 34.93 | epsilon: 0.07020
+570 episode | score: 22.62 | epsilon: 0.06727
+580 episode | score: 23.00 | epsilon: 0.06447
+590 episode | score: 22.88 | epsilon: 0.06182
+600 episode | score: 23.93 | epsilon: 0.05929
+610 episode | score: 28.28 | epsilon: 0.05689
+620 episode | score: 35.81 | epsilon: 0.05460
+630 episode | score: 37.03 | epsilon: 0.05242
+640 episode | score: 39.85 | epsilon: 0.05035
+650 episode | score: 45.11 | epsilon: 0.04839
+660 episode | score: 49.12 | epsilon: 0.04651
+670 episode | score: 52.85 | epsilon: 0.04473
+680 episode | score: 52.59 | epsilon: 0.04304
+690 episode | score: 51.25 | epsilon: 0.04143
+700 episode | score: 50.77 | epsilon: 0.03990
+710 episode | score: 52.61 | epsilon: 0.03844
+720 episode | score: 51.37 | epsilon: 0.03705
+730 episode | score: 61.25 | epsilon: 0.03573
+740 episode | score: 61.82 | epsilon: 0.03448
+750 episode | score: 60.86 | epsilon: 0.03328
+760 episode | score: 64.21 | epsilon: 0.03215
+770 episode | score: 82.27 | epsilon: 0.03107
+780 episode | score: 120.61 | epsilon: 0.03004
+790 episode | score: 169.42 | epsilon: 0.02906
+CartPole-v1 solved in 797 episodes!!
+```

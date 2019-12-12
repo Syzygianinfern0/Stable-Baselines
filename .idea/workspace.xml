@@ -57,29 +57,7 @@
       <recent name="$PROJECT_DIR$/rainbow/1_Q_Table" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
-    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Restart RL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Rainbow/6. PER" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rainbow/6. PER/config.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.main (2)">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Restart RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,6 +72,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rainbow/7. Noisy Net/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Restart RL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Rainbow/8. Multi Step" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rainbow/8. Multi Step/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.scratch_1" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main (3)" />
-        <item itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +204,7 @@
       <workItem from="1576052530999" duration="10662000" />
       <workItem from="1576069693995" duration="1693000" />
       <workItem from="1576128489613" duration="12089000" />
-      <workItem from="1576146212181" duration="10049000" />
+      <workItem from="1576146212181" duration="12370000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -276,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576156672650</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Noisy Net Implementation Complete">
+      <created>1576160631798</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1576160631798</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +311,8 @@
     <MESSAGE value="Dueling DQN Implemented" />
     <MESSAGE value="Dueling logs" />
     <MESSAGE value="PER Implementation Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="PER Implementation Complete" />
+    <MESSAGE value="Noisy Net Implementation Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Noisy Net Implementation Complete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="182" width="800" height="678" key="#Inspections" timestamp="1576128826690">
@@ -323,46 +331,46 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="317" y="445" width="862" height="576" key="#xdebugger.evaluate/0.0.1920.1043@0.0.1920.1043" timestamp="1576062902401" />
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2" timestamp="1576156672053">
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2" timestamp="1576160631225">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576156672053" />
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576160631225" />
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl" timestamp="1576135630119">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl/0.0.1920.1043@0.0.1920.1043" timestamp="1576135630119" />
-    <state width="916" height="403" key="GridCell.Tab.0.bottom" timestamp="1576160219960">
+    <state width="1876" height="276" key="GridCell.Tab.0.bottom" timestamp="1576162157571">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="916" height="403" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576160219960" />
-    <state width="916" height="403" key="GridCell.Tab.0.center" timestamp="1576160219960">
+    <state width="1876" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576162157571" />
+    <state width="1876" height="276" key="GridCell.Tab.0.center" timestamp="1576162157570">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="916" height="403" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576160219960" />
-    <state width="916" height="403" key="GridCell.Tab.0.left" timestamp="1576160219960">
+    <state width="1876" height="276" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576162157570" />
+    <state width="1876" height="276" key="GridCell.Tab.0.left" timestamp="1576162157569">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="916" height="403" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576160219960" />
-    <state width="916" height="403" key="GridCell.Tab.0.right" timestamp="1576160219960">
+    <state width="1876" height="276" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576162157569" />
+    <state width="1876" height="276" key="GridCell.Tab.0.right" timestamp="1576162157570">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="916" height="403" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576160219960" />
-    <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1576130601048">
+    <state width="1876" height="276" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576162157570" />
+    <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1576162055166">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576130601048" />
-    <state width="1876" height="340" key="GridCell.Tab.1.center" timestamp="1576130601048">
+    <state width="1876" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576162055166" />
+    <state width="1876" height="340" key="GridCell.Tab.1.center" timestamp="1576162055166">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576130601048" />
-    <state width="1876" height="340" key="GridCell.Tab.1.left" timestamp="1576130601047">
+    <state width="1876" height="340" key="GridCell.Tab.1.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576162055166" />
+    <state width="1876" height="340" key="GridCell.Tab.1.left" timestamp="1576162055166">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576130601047" />
-    <state width="1876" height="340" key="GridCell.Tab.1.right" timestamp="1576130601048">
+    <state width="1876" height="340" key="GridCell.Tab.1.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576162055166" />
+    <state width="1876" height="340" key="GridCell.Tab.1.right" timestamp="1576162055166">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576130601048" />
+    <state width="1876" height="340" key="GridCell.Tab.1.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576162055166" />
     <state x="775" y="234" width="360" height="574" key="RollbackChangesDialog" timestamp="1576149865914">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
@@ -388,6 +396,6 @@
     <SUITE FILE_PATH="coverage/Restart_RL$scratch_1.coverage" NAME="scratch_1 Coverage Results" MODIFIED="1576156545108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/Restart_RL$config.coverage" NAME="config Coverage Results" MODIFIED="1576146047138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/6. PER" />
     <SUITE FILE_PATH="coverage/Restart_RL$test_dqn.coverage" NAME="test dqn Coverage Results" MODIFIED="1576062939340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Restart_RL$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1576136544909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/4. Double DQN" />
+    <SUITE FILE_PATH="coverage/Restart_RL$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1576162070066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/8. Multi Step" />
   </component>
 </project>
