@@ -34,5 +34,5 @@ action size: 2
 260 episode | score: 157.64 | epsilon: 0.27981
 270 episode | score: 174.80 | epsilon: 0.26665
 280 episode | score: 184.45 | epsilon: 0.25413
-CartPole-v1 solved in 287 episodes!!S
+CartPole-v1 solved in 287 episodes!!
 ```

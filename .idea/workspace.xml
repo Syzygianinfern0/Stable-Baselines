@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="">
+    <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="Track Goal Score for Completion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rainbow/2. DQN/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow/2. DQN/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rainbow/3. Fixed Q Targets/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow/3. Fixed Q Targets/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rainbow/2. DQN/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow/2. DQN/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rainbow/2. DQN/Test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow/2. DQN/Test.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +183,7 @@
       <workItem from="1576041482234" duration="7561000" />
       <workItem from="1576052530999" duration="10662000" />
       <workItem from="1576069693995" duration="1693000" />
-      <workItem from="1576128489613" duration="7031000" />
+      <workItem from="1576128489613" duration="7403000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576135345362</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Track Goal Score for Completion">
+      <created>1576135684615</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576135684615</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +247,8 @@
     <MESSAGE value="DQN Train script complete" />
     <MESSAGE value="Minor Error" />
     <MESSAGE value="FQT Code Ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="FQT Code Ready" />
+    <MESSAGE value="Track Goal Score for Completion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Track Goal Score for Completion" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="182" width="800" height="678" key="#Inspections" timestamp="1576128826690">
@@ -259,10 +267,10 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="317" y="445" width="862" height="576" key="#xdebugger.evaluate/0.0.1920.1043@0.0.1920.1043" timestamp="1576062902401" />
-    <state x="566" y="118" width="777" height="806" key="CommitChangelistDialog2" timestamp="1576135344812">
+    <state x="566" y="118" width="777" height="806" key="CommitChangelistDialog2" timestamp="1576135690533">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="566" y="118" width="777" height="806" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576135344812" />
+    <state x="566" y="118" width="777" height="806" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576135690533" />
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl" timestamp="1576135630119">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
