@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Restart RL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Restart RL.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +56,7 @@
       <recent name="$PROJECT_DIR$/rainbow/1_Q_Table" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (2)">
+  <component name="RunManager" selected="Python.main (4)">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Restart RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,7 +101,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Restart RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,12 +109,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Rainbow/5. Dueling DQN" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Rainbow/9. Rainbow" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rainbow/5. Dueling DQN/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rainbow/9. Rainbow/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (4)" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.scratch_1" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.main (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +203,7 @@
       <workItem from="1576052530999" duration="10662000" />
       <workItem from="1576069693995" duration="1693000" />
       <workItem from="1576128489613" duration="12089000" />
-      <workItem from="1576146212181" duration="13077000" />
+      <workItem from="1576146212181" duration="13709000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -290,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576163096912</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Why was this commented out?">
+      <created>1576163948500</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576163948500</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +326,8 @@
     <MESSAGE value="PER Implementation Complete" />
     <MESSAGE value="Noisy Net Implementation Complete" />
     <MESSAGE value="Multi Step Implementation Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multi Step Implementation Complete" />
+    <MESSAGE value="Why was this commented out?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Why was this commented out?" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="182" width="800" height="678" key="#Inspections" timestamp="1576128826690">
@@ -331,6 +338,10 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="555" y="182" width="800" height="678" key="#Scopes/0.0.1920.1043@0.0.1920.1043" timestamp="1576069821459" />
+    <state x="0" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576164327543">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state x="0" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1576164327543" />
     <state x="686" y="326" width="703" height="391" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576160549581">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
@@ -339,30 +350,30 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="317" y="445" width="862" height="576" key="#xdebugger.evaluate/0.0.1920.1043@0.0.1920.1043" timestamp="1576062902401" />
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2" timestamp="1576163096358">
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2" timestamp="1576163947854">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576163096358" />
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576163947854" />
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl" timestamp="1576135630119">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl/0.0.1920.1043@0.0.1920.1043" timestamp="1576135630119" />
-    <state width="1876" height="276" key="GridCell.Tab.0.bottom" timestamp="1576162157571">
+    <state width="971" height="403" key="GridCell.Tab.0.bottom" timestamp="1576164442786">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576162157571" />
-    <state width="1876" height="276" key="GridCell.Tab.0.center" timestamp="1576162157570">
+    <state width="971" height="403" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576164442786" />
+    <state width="971" height="403" key="GridCell.Tab.0.center" timestamp="1576164442785">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576162157570" />
-    <state width="1876" height="276" key="GridCell.Tab.0.left" timestamp="1576162157569">
+    <state width="971" height="403" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576164442785" />
+    <state width="971" height="403" key="GridCell.Tab.0.left" timestamp="1576164442785">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576162157569" />
-    <state width="1876" height="276" key="GridCell.Tab.0.right" timestamp="1576162157570">
+    <state width="971" height="403" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576164442785" />
+    <state width="971" height="403" key="GridCell.Tab.0.right" timestamp="1576164442785">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576162157570" />
+    <state width="971" height="403" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576164442785" />
     <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1576162055166">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
@@ -398,6 +409,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Restart_RL$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1576160213488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/7. Noisy Net" />
+    <SUITE FILE_PATH="coverage/Restart_RL$main__4_.coverage" NAME="main (4) Coverage Results" MODIFIED="1576164418718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/9. Rainbow" />
     <SUITE FILE_PATH="coverage/Restart_RL$scratch_2.coverage" NAME="scratch_2 Coverage Results" MODIFIED="1576060538258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/Restart_RL$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1576151790903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/5. Dueling DQN" />
     <SUITE FILE_PATH="coverage/Restart_RL$main.coverage" NAME="main Coverage Results" MODIFIED="1576155719930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/6. PER" />
