@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="DQN Train script complete">
-      <change afterPath="$PROJECT_DIR$/Rainbow/2. DQN/Test.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rainbow/2. DQN/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow/2. DQN/main.py" afterDir="false" />
     </list>
@@ -25,7 +24,7 @@
   <component name="JupyterTrust" id="f580150b-56cc-49e7-8e38-0870fe6e1e21">
     <option name="files">
       <option value="Rainbow/1. Q Table/Q Table.ipynb" />
-      <option value="Rainbow/2. DQN/Test.ipynb" />
+      <option value="Rainbow/3. Double DQN/Test.ipynb" />
     </option>
   </component>
   <component name="ProjectId" id="1Up732E09mpAY5dNOZIoOYYvBpn" />
@@ -42,6 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Rainbow/3. Double DQN" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,6 +50,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Rainbow/3. Double DQN" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Rainbow/2. DQN" />
       <recent name="$PROJECT_DIR$/Rainbow/1. Q Table" />
@@ -156,7 +159,7 @@
       <workItem from="1576041482234" duration="7561000" />
       <workItem from="1576052530999" duration="10662000" />
       <workItem from="1576069693995" duration="1693000" />
-      <workItem from="1576128489613" duration="4149000" />
+      <workItem from="1576128489613" duration="5631000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -208,10 +211,10 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="555" y="182" width="800" height="678" key="#Scopes/0.0.1920.1043@0.0.1920.1043" timestamp="1576069821459" />
-    <state x="686" y="326" width="537" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576132681830">
+    <state x="686" y="326" width="537" height="391" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576134073357">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="686" y="326" width="537" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1043@0.0.1920.1043" timestamp="1576132681830" />
+    <state x="686" y="326" width="537" height="391" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1043@0.0.1920.1043" timestamp="1576134073357" />
     <state x="317" y="445" width="862" height="576" key="#xdebugger.evaluate" timestamp="1576062902401">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
@@ -220,22 +223,22 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="566" y="118" width="777" height="806" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576132650888" />
-    <state width="1876" height="276" key="GridCell.Tab.0.bottom" timestamp="1576132630394">
+    <state width="1876" height="323" key="GridCell.Tab.0.bottom" timestamp="1576134180231">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576132630394" />
-    <state width="1876" height="276" key="GridCell.Tab.0.center" timestamp="1576132630394">
+    <state width="1876" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576134180231" />
+    <state width="1876" height="323" key="GridCell.Tab.0.center" timestamp="1576134180230">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576132630394" />
-    <state width="1876" height="276" key="GridCell.Tab.0.left" timestamp="1576132630393">
+    <state width="1876" height="323" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576134180230" />
+    <state width="1876" height="323" key="GridCell.Tab.0.left" timestamp="1576134180230">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576132630393" />
-    <state width="1876" height="276" key="GridCell.Tab.0.right" timestamp="1576132630394">
+    <state width="1876" height="323" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576134180230" />
+    <state width="1876" height="323" key="GridCell.Tab.0.right" timestamp="1576134180231">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576132630394" />
+    <state width="1876" height="323" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576134180231" />
     <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1576130601048">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
@@ -252,10 +255,10 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state width="1876" height="340" key="GridCell.Tab.1.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576130601048" />
-    <state x="775" y="234" width="360" height="574" key="RollbackChangesDialog" timestamp="1576067997743">
+    <state x="775" y="234" width="360" height="574" key="RollbackChangesDialog" timestamp="1576134195965">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="775" y="234" width="360" height="574" key="RollbackChangesDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1576067997743" />
+    <state x="775" y="234" width="360" height="574" key="RollbackChangesDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1576134195965" />
     <state width="960" height="522" key="XDebugger.FullValuePopup" timestamp="1576045224941">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
@@ -267,7 +270,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Restart_RL$scratch_2.coverage" NAME="scratch_2 Coverage Results" MODIFIED="1576060538258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/Restart_RL$main.coverage" NAME="main Coverage Results" MODIFIED="1576132043611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/2. DQN" />
+    <SUITE FILE_PATH="coverage/Restart_RL$main.coverage" NAME="main Coverage Results" MODIFIED="1576133791156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/2. DQN" />
     <SUITE FILE_PATH="coverage/Restart_RL$test_dqn.coverage" NAME="test dqn Coverage Results" MODIFIED="1576062939340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -59,7 +59,7 @@ def main():
 
             # mask = 0 if done else 1
             # reward = reward if not done or score == 499 else -1
-            action_one_hot = np.zeros(2)
+            action_one_hot = np.zeros(num_actions)
             action_one_hot[action] = 1
             memory.push(state, next_state, action_one_hot, reward, done)
 
@@ -67,8 +67,6 @@ def main():
             state = next_state
 
             if steps > initial_exploration:
-                # epsilon -= 0.00005
-                # epsilon = max(epsilon, 0.1)
                 epsilon = min_epsilon + (max_epsilon - min_epsilon) * np.exp(-1 * e * epsilon_decay)
 
                 batch = memory.sample(batch_size)
