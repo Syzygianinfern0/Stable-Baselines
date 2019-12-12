@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="Track Goal Score for Completion">
+      <change beforePath="$PROJECT_DIR$/.idea/Restart RL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Restart RL.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rainbow/2. DQN/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow/2. DQN/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rainbow/2. DQN/Test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow/2. DQN/Test.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
       <recent name="$PROJECT_DIR$/rainbow/1_Q_Table" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.main (2)">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Restart RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,6 +74,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rainbow/3. Fixed Q Targets/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Restart RL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Rainbow/4. Double DQN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rainbow/4. Double DQN/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,6 +172,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.test dqn" />
@@ -183,7 +205,7 @@
       <workItem from="1576041482234" duration="7561000" />
       <workItem from="1576052530999" duration="10662000" />
       <workItem from="1576069693995" duration="1693000" />
-      <workItem from="1576128489613" duration="7403000" />
+      <workItem from="1576128489613" duration="8117000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -275,22 +297,22 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl/0.0.1920.1043@0.0.1920.1043" timestamp="1576135630119" />
-    <state width="1876" height="323" key="GridCell.Tab.0.bottom" timestamp="1576135613963">
+    <state width="1876" height="456" key="GridCell.Tab.0.bottom" timestamp="1576136662766">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576135613963" />
-    <state width="1876" height="323" key="GridCell.Tab.0.center" timestamp="1576135613962">
+    <state width="1876" height="456" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576136662766" />
+    <state width="1876" height="456" key="GridCell.Tab.0.center" timestamp="1576136662765">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="323" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576135613962" />
-    <state width="1876" height="323" key="GridCell.Tab.0.left" timestamp="1576135613962">
+    <state width="1876" height="456" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576136662765" />
+    <state width="1876" height="456" key="GridCell.Tab.0.left" timestamp="1576136662764">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="323" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576135613962" />
-    <state width="1876" height="323" key="GridCell.Tab.0.right" timestamp="1576135613963">
+    <state width="1876" height="456" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576136662764" />
+    <state width="1876" height="456" key="GridCell.Tab.0.right" timestamp="1576136662766">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="323" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576135613963" />
+    <state width="1876" height="456" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576136662766" />
     <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1576130601048">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
@@ -325,5 +347,6 @@
     <SUITE FILE_PATH="coverage/Restart_RL$scratch_2.coverage" NAME="scratch_2 Coverage Results" MODIFIED="1576060538258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/Restart_RL$main.coverage" NAME="main Coverage Results" MODIFIED="1576133791156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/2. DQN" />
     <SUITE FILE_PATH="coverage/Restart_RL$test_dqn.coverage" NAME="test dqn Coverage Results" MODIFIED="1576062939340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Restart_RL$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1576136544909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/4. Double DQN" />
   </component>
 </project>
