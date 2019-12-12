@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+# noinspection PyPep8Naming
 import torch.nn.functional as F
 
 from config import gamma
@@ -21,6 +22,7 @@ class DQN(nn.Module):
         qvalue = self.net(state)
         return qvalue
 
+    # noinspection PyArgumentList
     @classmethod
     def train_model(cls, net, optimizer, batch):
         states = torch.stack(batch.state)
@@ -34,6 +36,7 @@ class DQN(nn.Module):
 
         pred = torch.sum(current_q_value.mul(actions), dim=1)
 
+        # noinspection PyTypeChecker
         target = rewards + (1 - dones) * gamma * next_pred.max(1)[0]
 
         loss = F.mse_loss(pred, target.detach())
