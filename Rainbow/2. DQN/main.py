@@ -45,7 +45,7 @@ def main():
 
         score = 0
         state = env.reset()
-        state = torch.tensor(state).to(device)
+        state = torch.tensor(state).float().to(device)
         state = state.unsqueeze(0)
 
         while not done:
@@ -54,7 +54,7 @@ def main():
             action = get_action(state, dqn, epsilon, env)
             next_state, reward, done, _ = env.step(action)
 
-            next_state = torch.tensor(next_state)
+            next_state = torch.tensor(next_state).float().to(device)
             next_state = next_state.unsqueeze(0)
 
             # mask = 0 if done else 1
@@ -84,6 +84,8 @@ def main():
             writer.add_scalar('log/loss', float(loss), e)
 
         if np.mean(running_score) > goal_score:
+            writer.add_scalar('log/avg', np.mean(running_score), e)
+            writer.add_scalar('log/loss', float(loss), e)
             print(f'{env_name} solved in {e} episodes!!')
             break
 

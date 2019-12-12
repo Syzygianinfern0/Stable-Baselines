@@ -3,7 +3,7 @@ import torch.nn as nn
 # noinspection PyPep8Naming
 import torch.nn.functional as F
 
-from config import gamma
+from config import gamma, device
 
 
 class DQN(nn.Module):
@@ -25,11 +25,11 @@ class DQN(nn.Module):
     # noinspection PyArgumentList
     @classmethod
     def train_model(cls, net, optimizer, batch):
-        states = torch.stack(batch.state)
-        next_states = torch.stack(batch.next_state)
-        actions = torch.FloatTensor(batch.action)
-        rewards = torch.Tensor(batch.reward)
-        dones = torch.Tensor(batch.dones)
+        states = torch.stack(batch.state).to(device)
+        next_states = torch.stack(batch.next_state).to(device)
+        actions = torch.FloatTensor(batch.action).to(device)
+        rewards = torch.Tensor(batch.reward).to(device)
+        dones = torch.Tensor(batch.done).to(device)
 
         current_q_value = net(states).squeeze(1)
         next_pred = net(next_states).squeeze(1)
@@ -50,4 +50,4 @@ class DQN(nn.Module):
     def get_action(self, input):
         qvalue = self.forward(input)
         _, action = torch.max(qvalue, 1)
-        return action.numpy()[0]
+        return action.item()
