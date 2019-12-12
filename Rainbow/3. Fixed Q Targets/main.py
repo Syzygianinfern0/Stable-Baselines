@@ -1,3 +1,5 @@
+from typing import Dict, Any, Callable, Tuple
+
 import gym
 import numpy as np
 import torch.optim as optim
@@ -15,6 +17,10 @@ def get_action(state, dqn, epsilon, env):
         return dqn.get_action(state)
 
 
+def update_target_model(online_net, target_net):
+    target_net.load_state_dict(online_net.state_dict())
+
+
 def main():
     env = gym.make(env_name)
     env.seed(500)
@@ -25,13 +31,18 @@ def main():
     print('state size:', num_inputs)
     print('action size:', num_actions)
 
-    dqn: DQN = DQN(num_inputs, num_actions)
+    live_net: DQN = DQN(num_inputs, num_actions)
+    target_net: DQN = DQN(num_inputs, num_actions)
+    update_target_model(live_net, target_net)
 
-    optimizer = optim.Adam(dqn.parameters(), lr=lr)
+    optimizer = optim.Adam(live_net.parameters(), lr=lr)
     writer = SummaryWriter('logs')
 
-    dqn.to(device)
-    dqn.train()
+    live_net.to(device)
+    live_net.train()
+
+    target_net.train()
+    target_net.to(device)
 
     memory = Memory(experience_size)
     running_score = deque(maxlen=100)
@@ -51,13 +62,13 @@ def main():
         while not done:
             steps += 1
 
-            action = get_action(state, dqn, epsilon, env)
+            action = get_action(state, live_net, epsilon, env)
             next_state, reward, done, _ = env.step(action)
 
             next_state = torch.tensor(next_state).float().to(device)
             next_state = next_state.unsqueeze(0)
 
-            action_one_hot = np.zeros(num_actions)
+            action_one_hot = np.zeros(2)
             action_one_hot[action] = 1
             memory.push(state, next_state, action_one_hot, reward, done)
 
@@ -68,7 +79,10 @@ def main():
                 epsilon = min_epsilon + (max_epsilon - min_epsilon) * np.exp(-1 * e * epsilon_decay)
 
                 batch = memory.sample(batch_size)
-                loss = DQN.train_model(dqn, optimizer, batch)
+                loss = DQN.train_model(live_net, target_net, optimizer, batch)
+
+                if steps % update_target == 0:
+                    update_target_model(live_net, target_net)
 
         writer.add_scalar('log/score', score, e)
         scores.append(score)
@@ -83,7 +97,7 @@ def main():
             writer.add_scalar('log/avg', np.mean(running_score), e)
             writer.add_scalar('log/loss', float(loss), e)
             print(f'{env_name} solved in {e} episodes!!')
-            torch.save(dqn.net.state_dict(), 'trained.pth')
+            torch.save(live_net.net.state_dict(), 'trained.pth')
             break
 
 
