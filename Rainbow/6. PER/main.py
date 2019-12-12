@@ -34,7 +34,7 @@ def main():
     update_target_model(live_net, target_net)
 
     optimizer = optim.Adam(live_net.parameters(), lr=lr)
-    # writer = SummaryWriter('logs')
+    writer = SummaryWriter('logs')
 
     live_net.to(device)
     live_net.train()
@@ -84,18 +84,18 @@ def main():
                 if steps % update_target == 0:
                     update_target_model(live_net, target_net)
 
-        # writer.add_scalar('log/score', score, e)
+        writer.add_scalar('log/score', score, e)
         scores.append(score)
         running_score.append(score)
 
         if e % log_interval == 0:
             print(f'{e} episode | score: {np.mean(running_score):.2f} | epsilon: {epsilon:.5f} | beta: {beta:.5f}')
-            # writer.add_scalar('log/avg', np.mean(running_score), e)
-            # writer.add_scalar('log/loss', float(loss), e)
+            writer.add_scalar('log/avg', np.mean(running_score), e)
+            writer.add_scalar('log/loss', float(loss), e)
 
         if np.mean(running_score) > 300:
-            # writer.add_scalar('log/avg', np.mean(running_score), e)
-            # writer.add_scalar('log/loss', float(loss), e)
+            writer.add_scalar('log/avg', np.mean(running_score), e)
+            writer.add_scalar('log/loss', float(loss), e)
             print(f'{env_name} solved in {e} episodes!!')
             torch.save(live_net.state_dict(), 'trained.pth')
             break
