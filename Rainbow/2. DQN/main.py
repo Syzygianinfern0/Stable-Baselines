@@ -79,7 +79,7 @@ def main():
             writer.add_scalar('log/avg', np.mean(running_score), e)
             writer.add_scalar('log/loss', float(loss), e)
 
-        if np.mean(running_score) > 250:
+        if np.mean(running_score) > goal_score:
             writer.add_scalar('log/avg', np.mean(running_score), e)
             writer.add_scalar('log/loss', float(loss), e)
             print(f'{env_name} solved in {e} episodes!!')

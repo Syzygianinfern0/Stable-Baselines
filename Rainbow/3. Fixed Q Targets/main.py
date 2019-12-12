@@ -1,5 +1,3 @@
-from typing import Dict, Any, Callable, Tuple
-
 import gym
 import numpy as np
 import torch.optim as optim
@@ -68,7 +66,7 @@ def main():
             next_state = torch.tensor(next_state).float().to(device)
             next_state = next_state.unsqueeze(0)
 
-            action_one_hot = np.zeros(2)
+            action_one_hot = np.zeros(num_actions)
             action_one_hot[action] = 1
             memory.push(state, next_state, action_one_hot, reward, done)
 
@@ -93,7 +91,7 @@ def main():
             writer.add_scalar('log/avg', np.mean(running_score), e)
             writer.add_scalar('log/loss', float(loss), e)
 
-        if np.mean(running_score) > 250:
+        if np.mean(running_score) > goal_score:
             writer.add_scalar('log/avg', np.mean(running_score), e)
             writer.add_scalar('log/loss', float(loss), e)
             print(f'{env_name} solved in {e} episodes!!')
