@@ -2,7 +2,9 @@
   <dictionary name="syzygianinfern0">
     <words>
       <w>cuda</w>
+      <w>dones</w>
       <w>optim</w>
+      <w>qvalue</w>
     </words>
   </dictionary>
 </component>
