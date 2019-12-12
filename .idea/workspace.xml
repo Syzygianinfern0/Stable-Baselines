@@ -203,7 +203,7 @@
       <workItem from="1576052530999" duration="10662000" />
       <workItem from="1576069693995" duration="1693000" />
       <workItem from="1576128489613" duration="12089000" />
-      <workItem from="1576146212181" duration="13709000" />
+      <workItem from="1576146212181" duration="14044000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -296,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576163948500</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Rainbow Implemented&#10;WIP">
+      <created>1576164539984</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1576164539984</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +334,8 @@
     <MESSAGE value="Noisy Net Implementation Complete" />
     <MESSAGE value="Multi Step Implementation Complete" />
     <MESSAGE value="Why was this commented out?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Why was this commented out?" />
+    <MESSAGE value="Rainbow Implemented&#10;WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rainbow Implemented&#10;WIP" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="182" width="800" height="678" key="#Inspections" timestamp="1576128826690">
@@ -350,10 +358,10 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="317" y="445" width="862" height="576" key="#xdebugger.evaluate/0.0.1920.1043@0.0.1920.1043" timestamp="1576062902401" />
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2" timestamp="1576163947854">
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2" timestamp="1576164539461">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576163947854" />
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576164539461" />
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl" timestamp="1576135630119">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
