@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Policy Gradients/REINFORCE/Test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/2. Actor Critic/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/2. Actor Critic/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/2. Actor Critic/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Restart RL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Restart RL.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/REINFORCE/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/REINFORCE/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/REINFORCE/Test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/1. REINFORCE/Test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/REINFORCE/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/1. REINFORCE/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/REINFORCE/logs/events.out.tfevents.1576740066.azkaban" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/1. REINFORCE/logs/events.out.tfevents.1576740066.azkaban" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/REINFORCE/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/1. REINFORCE/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/REINFORCE/memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/1. REINFORCE/memory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/REINFORCE/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/1. REINFORCE/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/REINFORCE/trained.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/1. REINFORCE/trained.pth" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +61,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Rainbow/3. Double DQN" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Rainbow/2. DQN" />
       <recent name="$PROJECT_DIR$/Rainbow/1. Q Table" />
       <recent name="$PROJECT_DIR$/rainbow/1_Q_Table" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Policy Gradients/REINFORCE" />
+      <recent name="$PROJECT_DIR$/Rainbow/3. Double DQN" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main (3)">
@@ -210,7 +220,8 @@
       <workItem from="1576128489613" duration="12089000" />
       <workItem from="1576146212181" duration="14518000" />
       <workItem from="1576491375873" duration="1955000" />
-      <workItem from="1576736248541" duration="3281000" />
+      <workItem from="1576736248541" duration="5003000" />
+      <workItem from="1576753849506" duration="720000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -331,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576740210359</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Tested">
+      <created>1576740441521</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1576740441521</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +386,8 @@
     <MESSAGE value="Policy Gradients Bringup" />
     <MESSAGE value="Model for REINFORCE" />
     <MESSAGE value="Model Trained" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model Trained" />
+    <MESSAGE value="Tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="182" width="800" height="678" key="#Inspections" timestamp="1576128826690">
@@ -391,10 +410,10 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="317" y="445" width="862" height="576" key="#xdebugger.evaluate/0.0.1920.1043@0.0.1920.1043" timestamp="1576739723740" />
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2" timestamp="1576740209699">
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2" timestamp="1576740441006">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576740209699" />
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576740441006" />
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl" timestamp="1576135630119">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
@@ -452,7 +471,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Policy Gradients/REINFORCE/model.py</url>
+          <url>file://$PROJECT_DIR$/Policy Gradients/1. REINFORCE/model.py</url>
           <line>58</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
