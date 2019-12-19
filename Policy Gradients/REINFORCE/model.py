@@ -1,10 +1,7 @@
 import numpy as np
-import torch
 import torch.nn as nn
-# noinspection PyPep8Naming
-import torch.nn.functional as F
 
-from config import gamma
+from config import *
 
 
 class REINFORCE(nn.Module):
@@ -28,10 +25,10 @@ class REINFORCE(nn.Module):
     def train_model(cls, net, transitions, optimizer):
         states, actions, rewards, dones = transitions.state, transitions.action, transitions.reward, transitions.done
 
-        states = torch.stack(states)
-        actions = torch.stack(actions)
-        rewards = torch.tensor(rewards)
-        dones = torch.tensor(dones)
+        states = torch.stack(states).to(device)
+        actions = torch.stack(actions).to(device)
+        rewards = torch.tensor(rewards).to(device)
+        dones = torch.tensor(dones).to(device)
 
         returns = torch.zeros_like(rewards)
 
@@ -39,7 +36,7 @@ class REINFORCE(nn.Module):
         # noinspection PyTypeChecker
         for t in reversed(range(len(rewards))):
             # noinspection PyTypeChecker
-            running_return = rewards[t] + gamma * running_return * (1 - dones[t])
+            running_return = rewards[t] + gamma * running_return * ~dones[t]
             returns[t] = running_return
 
         policies = net(states)
@@ -57,7 +54,7 @@ class REINFORCE(nn.Module):
 
     def get_action(self, state):
         policy = self.forward(state)
-        policy = policy.unsqueeze(0).numpy()
+        policy = policy.squeeze().cpu().detach().numpy()
 
         action = np.random.choice(self.no_actions, 1, p=policy)[0]
         return action
