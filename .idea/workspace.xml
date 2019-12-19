@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Policy Gradients/REINFORCE/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Restart RL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Restart RL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/REINFORCE/Test.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Policy Gradients/REINFORCE/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/REINFORCE/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/REINFORCE/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/REINFORCE/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Rainbow/3. Double DQN" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Policy Gradients/REINFORCE" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -212,7 +210,7 @@
       <workItem from="1576128489613" duration="12089000" />
       <workItem from="1576146212181" duration="14518000" />
       <workItem from="1576491375873" duration="1955000" />
-      <workItem from="1576736248541" duration="2932000" />
+      <workItem from="1576736248541" duration="3281000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -326,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576737894198</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Model Trained">
+      <created>1576740210359</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1576740210359</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +367,8 @@
     <MESSAGE value="Rainbow Implemented&#10;WIP" />
     <MESSAGE value="Policy Gradients Bringup" />
     <MESSAGE value="Model for REINFORCE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model for REINFORCE" />
+    <MESSAGE value="Model Trained" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model Trained" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="182" width="800" height="678" key="#Inspections" timestamp="1576128826690">
@@ -385,10 +391,10 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="317" y="445" width="862" height="576" key="#xdebugger.evaluate/0.0.1920.1043@0.0.1920.1043" timestamp="1576739723740" />
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2" timestamp="1576737893525">
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2" timestamp="1576740209699">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576737893525" />
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576740209699" />
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl" timestamp="1576135630119">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
