@@ -1,7 +1,8 @@
+import numpy as np
 import torch
 import torch.nn as nn
+# noinspection PyPep8Naming
 import torch.nn.functional as F
-import numpy as np
 
 from config import gamma
 
@@ -27,18 +28,20 @@ class ActorCritic(nn.Module):
         state, next_state, action, reward, done = transition
 
         policy, q_value = net(state)
-        policy, q_value = policy.view(-1, net.no_actions), q_value.view(-1, net.no_actions)
+        policy, q_value = policy.squeeze(), q_value.squeeze()
+
         _, next_q_value = net(next_state)
-        next_q_value = next_q_value.view(-1, net.no_actions)
+        next_q_value = next_q_value.squeeze()
+
         next_action = net.get_action(next_state)
 
-        target = reward + (1 - done) * gamma * next_q_value[0][next_action]
+        target = reward + (1 - done) * gamma * next_q_value[next_action]
 
-        log_policy = torch.log(policy[0])[action]
-        loss_policy = - log_policy * q_value[0][action].item()
-        loss_value = F.mse_loss(q_value[0][action], target.detach())
+        log_policy = torch.log(policy)[action]
+        loss_policy = log_policy * q_value[action].item()
+        loss_value = F.smooth_l1_loss(q_value[action], target.detach())
 
-        loss = loss_policy + loss_value
+        loss = loss_value + loss_policy
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
