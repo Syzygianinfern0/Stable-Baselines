@@ -1,14 +1,14 @@
 from collections import namedtuple, deque
 
-Transition = namedtuple('Transition', ('state', 'next_state', 'action', 'reward', 'mask'))
+Transition = namedtuple('Transition', ('state', 'next_state', 'action', 'reward', 'done'))
 
 
 class Memory(object):
     def __init__(self):
         self.memory = deque()
 
-    def push(self, state, next_state, action, reward, mask):
-        self.memory.append(Transition(state, next_state, action, reward, mask))
+    def push(self, state, next_state, action, reward, done):
+        self.memory.append(Transition(state, next_state, action, reward, done))
 
     def sample(self):
         memory = self.memory

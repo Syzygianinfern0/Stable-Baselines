@@ -5,8 +5,6 @@ goal_score = 200
 
 max_episodes = 1000
 
-batch_size = 32
-
 log_interval = 10
 lr = 0.001
 
