@@ -30,16 +30,15 @@ class ActorCritic(nn.Module):
         policy, q_value = net(state)
         policy, q_value = policy.squeeze(), q_value.squeeze()
 
+        log_policy = torch.log(policy)[action]
+        loss_policy = -log_policy * q_value[action].item()
+
         _, next_q_value = net(next_state)
         next_q_value = next_q_value.squeeze()
 
         next_action = net.get_action(next_state)
-
         target = reward + (1 - done) * gamma * next_q_value[next_action]
-
-        log_policy = torch.log(policy)[action]
-        loss_policy = log_policy * q_value[action].item()
-        loss_value = F.smooth_l1_loss(q_value[action], target.detach())
+        loss_value = F.mse_loss(q_value[action], target.detach())
 
         loss = loss_value + loss_policy
         optimizer.zero_grad()
