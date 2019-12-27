@@ -5,7 +5,7 @@ import torch.nn.functional as F
 from scipy.signal import lfilter
 from torch.distributions import Categorical
 
-from config import device, gamma
+from config import device, gamma, lmbda
 
 
 class GAE(nn.Module):
@@ -31,23 +31,33 @@ class GAE(nn.Module):
         return policy_logits, value
 
     @classmethod
-    def train_model(cls, net, optimizer, trajectory, rtg=True):
-        states = torch.stack(trajectory.state).to(device)
-        actions = torch.tensor(trajectory.action).to(device)
-        # rewards = torch.tensor(trajectory.reward).to(device)
-        rewards = trajectory.reward
+    def train_model(cls, net, optimizer, batch, rtg=True):
+        states = torch.stack(batch.state).to(device)
+        next_states = torch.stack(batch.next_state).to(device)
+        actions = torch.tensor(batch.action).to(device)
+        rewards = torch.tensor(batch.reward).to(device)
+        dones = torch.tensor(batch.done).to(device)
+        values = torch.tensor(batch.value).to(device)
 
-        logits = net(states).squeeze()
+        deltas = rewards[:-1] + gamma * values[1:] - values[:-1]
+        advantages = lfilter([1], [1, float(-gamma * lmbda)], list(deltas)[::-1], axis=0)[::-1]
+        returns = lfilter([1], [1, float(-gamma)], list(rewards)[::-1], axis=0)[::-1]
+
+        advantages, returns = torch.tensor(advantages).to(device), torch.tensor(returns).to(device)
+
+        mu, dev = advantages.mean(), advantages.std()
+        advantages = (advantages - mu) / dev
+
+        logits, off_values = net(states).squeeze()
+
         log_probs = F.log_softmax(logits)
         sum_log_probs = torch.sum(log_probs * actions, dim=1)
+        policy_loss = -1 * torch.mean(sum_log_probs * advantages)
 
-        if rtg:
-            weights = lfilter([1], [1, float(-gamma)], list(rewards)[::-1], axis=0)[::-1]
-        else:
-            weights = torch.sum(rewards)
-        g = sum_log_probs * torch.tensor(weights.copy()).to(device)
+        value_loss = F.mse_loss(returns, off_values)
 
-        loss = -1 * torch.mean(g)
+        loss = policy_loss + value_loss
+
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
@@ -55,9 +65,9 @@ class GAE(nn.Module):
         return loss
 
     def get_action(self, state):
-        logits = self.forward(state).squeeze()
+        logits, value = self.forward(state).squeeze()
 
         distribution = Categorical(logits=logits)
         action = distribution.sample().item()
 
-        return action
+        return action, value

@@ -32,9 +32,9 @@ def main():
     running_score = deque(maxlen=100)
     scores = []
     steps = 0
+    memory = Memory()
 
     for e in range(max_episodes):
-        trajectory = Memory()
         done = False
 
         score = 0
@@ -45,7 +45,7 @@ def main():
         while not done:
             steps += 1
 
-            action = net.get_action(state)
+            action, value = net.get_action(state)
             next_state, reward, done, _ = env.step(action)
 
             next_state = torch.tensor(next_state).float().to(device)
@@ -53,7 +53,7 @@ def main():
 
             action_one_hot = np.zeros(num_actions)
             action_one_hot[action] = 1
-            trajectory.push(state, next_state, action_one_hot, reward, done)
+            memory.push(state, next_state, action_one_hot, reward, done, value)
 
             score += reward
             state = next_state
@@ -62,7 +62,7 @@ def main():
         scores.append(score)
         running_score.append(score)
 
-        loss = GAE.train_model(net, optimizer, trajectory.sample())
+        loss = GAE.train_model(net, optimizer, memory.sample(batch_size))
 
         if e % log_interval == 0:
             print(f'{e} episode | score: {np.mean(running_score):.2f}')

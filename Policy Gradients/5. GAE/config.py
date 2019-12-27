@@ -4,6 +4,7 @@ env_name = 'CartPole-v1'
 goal_score = 200
 
 max_episodes = 1000
+batch_size = 32
 
 gamma = 0.99
 lmbda = 0.95
