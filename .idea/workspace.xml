@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Restart RL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Restart RL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/5. GAE/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/5. GAE/Test.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/5. GAE/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/5. GAE/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Policy Gradients/5. GAE/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/5. GAE/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/5. GAE/memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/5. GAE/memory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/5. GAE/policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/5. GAE/policy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,16 +53,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Rainbow/2. DQN" />
-      <recent name="$PROJECT_DIR$/Rainbow/1. Q Table" />
-      <recent name="$PROJECT_DIR$/rainbow/1_Q_Table" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Policy Gradients/5. GAE" />
       <recent name="$PROJECT_DIR$/Policy Gradients/4. VPG" />
       <recent name="$PROJECT_DIR$/Policy Gradients/REINFORCE" />
       <recent name="$PROJECT_DIR$/Rainbow/3. Double DQN" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Rainbow/2. DQN" />
+      <recent name="$PROJECT_DIR$/Rainbow/1. Q Table" />
+      <recent name="$PROJECT_DIR$/rainbow/1_Q_Table" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -236,7 +234,7 @@
       <workItem from="1577347944714" duration="11914000" />
       <workItem from="1577403333834" duration="6832000" />
       <workItem from="1577452920182" duration="6107000" />
-      <workItem from="1577469245978" duration="3561000" />
+      <workItem from="1577469245978" duration="4112000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -448,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577459595147</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="This is a proper working implementation of GAE&#10;Why hasn't anyone online done one?">
+      <created>1577473278971</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1577473278971</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +475,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="FQT Code Ready" />
     <MESSAGE value="Track Goal Score for Completion" />
     <MESSAGE value="Dueling DQN Implemented" />
     <MESSAGE value="Dueling logs" />
@@ -495,7 +499,8 @@
     <MESSAGE value="GAE Actor Critic Bringup" />
     <MESSAGE value="Advantage estimations" />
     <MESSAGE value="Solve algo errors and log individual losses too" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve algo errors and log individual losses too" />
+    <MESSAGE value="This is a proper working implementation of GAE&#10;Why hasn't anyone online done one?" />
+    <option name="LAST_COMMIT_MESSAGE" value="This is a proper working implementation of GAE&#10;Why hasn't anyone online done one?" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -529,34 +534,34 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="972" y="335" width="862" height="576" key="#xdebugger.evaluate/0.0.1920.1043@0.0.1920.1043" timestamp="1577455928097" />
-    <state x="244" y="90" width="777" height="806" key="CommitChangelistDialog2" timestamp="1577473228577">
+    <state x="244" y="90" width="777" height="806" key="CommitChangelistDialog2" timestamp="1577473278320">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1577473228577" />
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1577473278320" />
     <state x="181" y="80" width="777" height="806" key="CommitChangelistDialog2/0.0.3840.1043@0.0.3840.1043" timestamp="1576768341058" />
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl" timestamp="1576836268917">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl/0.0.1920.1043@0.0.1920.1043" timestamp="1576836268917" />
-    <state width="1876" height="383" key="GridCell.Tab.0.bottom" timestamp="1577473064801">
+    <state width="1876" height="276" key="GridCell.Tab.0.bottom" timestamp="1577473449745">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1577473064801" />
+    <state width="1876" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1577473449745" />
     <state width="1876" height="372" key="GridCell.Tab.0.bottom/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519174" />
-    <state width="1876" height="383" key="GridCell.Tab.0.center" timestamp="1577473064800">
+    <state width="1876" height="276" key="GridCell.Tab.0.center" timestamp="1577473449744">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="383" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1577473064800" />
+    <state width="1876" height="276" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1577473449744" />
     <state width="1876" height="372" key="GridCell.Tab.0.center/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519174" />
-    <state width="1876" height="383" key="GridCell.Tab.0.left" timestamp="1577473064800">
+    <state width="1876" height="276" key="GridCell.Tab.0.left" timestamp="1577473449743">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="383" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1577473064800" />
+    <state width="1876" height="276" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1577473449743" />
     <state width="1876" height="372" key="GridCell.Tab.0.left/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519173" />
-    <state width="1876" height="383" key="GridCell.Tab.0.right" timestamp="1577473064801">
+    <state width="1876" height="276" key="GridCell.Tab.0.right" timestamp="1577473449744">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="383" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1577473064801" />
+    <state width="1876" height="276" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1577473449744" />
     <state width="1876" height="372" key="GridCell.Tab.0.right/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519174" />
     <state width="1876" height="383" key="GridCell.Tab.1.bottom" timestamp="1577473064802">
       <screen x="0" y="0" width="1920" height="1043" />
@@ -599,17 +604,6 @@
     </state>
     <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1043@0.0.1920.1043" timestamp="1577470657696" />
     <state x="1246" y="229" width="1344" height="678" key="search.everywhere.popup/0.0.3840.1043@0.0.3840.1043" timestamp="1576765411593" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Policy Gradients/5. GAE/policy.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Restart_RL$model__1_.coverage" NAME="model (1) Coverage Results" MODIFIED="1576767708879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Policy Gradients/2. Actor Critic" />
