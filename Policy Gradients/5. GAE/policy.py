@@ -31,7 +31,7 @@ class GAE(nn.Module):
         return policy_logits, value
 
     @classmethod
-    def train_model(cls, net, optimizer, batch, rtg=True):
+    def train_model(cls, net, optimizer, batch):
         states = torch.stack(batch.state).to(device)
         next_states = torch.stack(batch.next_state).to(device)
         actions = torch.tensor(batch.action).to(device)
@@ -40,19 +40,20 @@ class GAE(nn.Module):
         values = torch.tensor(batch.value).to(device)
 
         deltas = rewards[:-1] + gamma * values[1:] - values[:-1]
-        advantages = lfilter([1], [1, float(-gamma * lmbda)], list(deltas)[::-1], axis=0)[::-1]
-        returns = lfilter([1], [1, float(-gamma)], list(rewards)[::-1], axis=0)[::-1]
+        advantages = lfilter([1], [1, float(-gamma * lmbda)], list(deltas.cpu().numpy())[::-1], axis=0)[::-1]
+        returns = lfilter([1], [1, float(-gamma)], list(rewards.cpu().numpy())[::-1], axis=0)[::-1]
 
-        advantages, returns = torch.tensor(advantages).to(device), torch.tensor(returns).to(device)
+        advantages, returns = torch.tensor(advantages.copy()).to(device), torch.tensor(returns.copy()).to(device)
 
-        mu, dev = advantages.mean(), advantages.std()
-        advantages = (advantages - mu) / dev
+        # mu, dev = advantages.mean(), advantages.std()
+        # advantages = (advantages - mu) / dev
 
-        logits, off_values = net(states).squeeze()
+        logits, off_values = net(states)
+        logits, off_values = logits.squeeze(), off_values.squeeze()
 
         log_probs = F.log_softmax(logits)
         sum_log_probs = torch.sum(log_probs * actions, dim=1)
-        policy_loss = -1 * torch.mean(sum_log_probs * advantages)
+        policy_loss = -1 * torch.mean(sum_log_probs[:-1] * advantages)
 
         value_loss = F.mse_loss(returns, off_values)
 
@@ -62,10 +63,11 @@ class GAE(nn.Module):
         loss.backward()
         optimizer.step()
 
-        return loss
+        return loss, policy_loss, value_loss
 
     def get_action(self, state):
-        logits, value = self.forward(state).squeeze()
+        logits, value = self.forward(state)
+        logits, value = logits.squeeze(), value.squeeze()
 
         distribution = Categorical(logits=logits)
         action = distribution.sample().item()

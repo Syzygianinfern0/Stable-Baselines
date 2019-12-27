@@ -32,6 +32,9 @@ def main():
     running_score = deque(maxlen=100)
     scores = []
     steps = 0
+    loss = 0
+    value_loss = 0
+    policy_loss = 0
     memory = Memory()
 
     for e in range(max_episodes):
@@ -62,18 +65,21 @@ def main():
         scores.append(score)
         running_score.append(score)
 
-        loss = GAE.train_model(net, optimizer, memory.sample(batch_size))
+        if batch_size < len(memory):
+            loss, policy_loss, value_loss = GAE.train_model(net, optimizer, memory.sample(batch_size))
 
         if e % log_interval == 0:
             print(f'{e} episode | score: {np.mean(running_score):.2f}')
             writer.add_scalar('log/avg', np.mean(running_score), e)
             writer.add_scalar('log/loss', float(loss), e)
+            writer.add_scalar('log/policy_loss', float(policy_loss), e)
+            writer.add_scalar('log/value_loss', float(value_loss), e)
 
         if np.mean(running_score) > goal_score:
             writer.add_scalar('log/avg', np.mean(running_score), e)
             writer.add_scalar('log/loss', float(loss), e)
             print(f'{env_name} solved in {e} episodes!!')
-            torch.save(net.net.state_dict(), 'trained.pth')
+            torch.save(net.state_dict(), 'trained.pth')
             break
 
     writer.close()
