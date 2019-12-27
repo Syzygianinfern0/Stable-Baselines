@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/Test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/5. GAE/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/5. GAE/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/5. GAE/memory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/5. GAE/policy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Restart RL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Restart RL.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/4. VPG/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/4. VPG/logs/events.out.tfevents.1577406666.azkaban" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/4. VPG/trained.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/trained.pth" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Policy Gradients/4. VPG" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Policy Gradients/5. GAE" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,6 +61,7 @@
       <recent name="$PROJECT_DIR$/rainbow/1_Q_Table" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Policy Gradients/5. GAE" />
       <recent name="$PROJECT_DIR$/Policy Gradients/4. VPG" />
       <recent name="$PROJECT_DIR$/Policy Gradients/REINFORCE" />
       <recent name="$PROJECT_DIR$/Rainbow/3. Double DQN" />
@@ -236,7 +237,7 @@
       <workItem from="1576836400063" duration="2000" />
       <workItem from="1577299768700" duration="624000" />
       <workItem from="1577347944714" duration="11914000" />
-      <workItem from="1577403333834" duration="4884000" />
+      <workItem from="1577403333834" duration="5688000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -420,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577406954437</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Logs and Trained model">
+      <created>1577415635521</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1577415635521</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +450,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="DQN" />
     <MESSAGE value="DQN Models and Memory" />
     <MESSAGE value="DQN Train script complete" />
     <MESSAGE value="Minor Error" />
@@ -467,7 +474,8 @@
     <MESSAGE value="Add Advantage function" />
     <MESSAGE value="Vanilla Model Added" />
     <MESSAGE value="Don't let the past distract you" />
-    <option name="LAST_COMMIT_MESSAGE" value="Don't let the past distract you" />
+    <MESSAGE value="Logs and Trained model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logs and Trained model" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -497,34 +505,34 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="887" y="319" width="862" height="576" key="#xdebugger.evaluate/0.0.1920.1043@0.0.1920.1043" timestamp="1577406314139" />
-    <state x="244" y="90" width="777" height="806" key="CommitChangelistDialog2" timestamp="1577406953437">
+    <state x="244" y="90" width="777" height="806" key="CommitChangelistDialog2" timestamp="1577416577408">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1577406953437" />
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1577416577408" />
     <state x="181" y="80" width="777" height="806" key="CommitChangelistDialog2/0.0.3840.1043@0.0.3840.1043" timestamp="1576768341058" />
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl" timestamp="1576836268917">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl/0.0.1920.1043@0.0.1920.1043" timestamp="1576836268917" />
-    <state width="1878" height="340" key="GridCell.Tab.0.bottom" timestamp="1577406473413">
+    <state width="1878" height="276" key="GridCell.Tab.0.bottom" timestamp="1577415670732">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1878" height="340" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1577406473413" />
+    <state width="1878" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1577415670732" />
     <state width="1876" height="372" key="GridCell.Tab.0.bottom/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519174" />
-    <state width="1878" height="340" key="GridCell.Tab.0.center" timestamp="1577406473413">
+    <state width="1878" height="276" key="GridCell.Tab.0.center" timestamp="1577415670731">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1878" height="340" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1577406473413" />
+    <state width="1878" height="276" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1577415670731" />
     <state width="1876" height="372" key="GridCell.Tab.0.center/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519174" />
-    <state width="1878" height="340" key="GridCell.Tab.0.left" timestamp="1577406473412">
+    <state width="1878" height="276" key="GridCell.Tab.0.left" timestamp="1577415670731">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1878" height="340" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1577406473412" />
+    <state width="1878" height="276" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1577415670731" />
     <state width="1876" height="372" key="GridCell.Tab.0.left/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519173" />
-    <state width="1878" height="340" key="GridCell.Tab.0.right" timestamp="1577406473413">
+    <state width="1878" height="276" key="GridCell.Tab.0.right" timestamp="1577415670732">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1878" height="340" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1577406473413" />
+    <state width="1878" height="276" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1577415670732" />
     <state width="1876" height="372" key="GridCell.Tab.0.right/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519174" />
     <state width="1878" height="340" key="GridCell.Tab.1.bottom" timestamp="1577406473414">
       <screen x="0" y="0" width="1920" height="1043" />
@@ -558,10 +566,10 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state width="960" height="522" key="XDebugger.FullValuePopup/0.0.1920.1043@0.0.1920.1043" timestamp="1576045224941" />
-    <state x="1246" y="229" width="1344" height="678" key="search.everywhere.popup" timestamp="1576765411593">
-      <screen x="0" y="0" width="3840" height="1043" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1577415657452">
+      <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1043@0.0.1920.1043" timestamp="1576044463096" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1043@0.0.1920.1043" timestamp="1577415657452" />
     <state x="1246" y="229" width="1344" height="678" key="search.everywhere.popup/0.0.3840.1043@0.0.3840.1043" timestamp="1576765411593" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
