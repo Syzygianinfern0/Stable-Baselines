@@ -39,23 +39,27 @@ class GAE(nn.Module):
         dones = torch.tensor(batch.done).to(device)
         values = torch.tensor(batch.value).to(device)
 
+        # if dones[-1] == True:
+        #     torch.cat([rewards, 0], )
+
         deltas = rewards[:-1] + gamma * values[1:] - values[:-1]
-        advantages = lfilter([1], [1, float(-gamma * lmbda)], list(deltas.cpu().numpy())[::-1], axis=0)[::-1]
-        returns = lfilter([1], [1, float(-gamma)], list(rewards.cpu().numpy())[::-1], axis=0)[::-1]
 
-        advantages, returns = torch.tensor(advantages.copy()).to(device), torch.tensor(returns.copy()).to(device)
+        advantages = cls.discounted_cum_sum(deltas, gamma * lmbda)
+        returns = cls.discounted_cum_sum(rewards, gamma)
 
-        # mu, dev = advantages.mean(), advantages.std()
-        # advantages = (advantages - mu) / dev
+        # advantages, returns = torch.tensor(advantages.copy()).to(device), torch.tensor(returns.copy()).to(device)
 
-        logits, off_values = net(states)
-        logits, off_values = logits.squeeze(), off_values.squeeze()
+        mu, dev = advantages.mean(), advantages.std()
+        advantages = (advantages - mu) / dev
 
-        log_probs = F.log_softmax(logits)
+        logits, _ = net(states)
+        # logits, off_values = logits.squeeze(), off_values.squeeze()
+
+        log_probs = F.log_softmax(logits.squeeze())
         sum_log_probs = torch.sum(log_probs * actions, dim=1)
         policy_loss = -1 * torch.mean(sum_log_probs[:-1] * advantages)
 
-        value_loss = F.mse_loss(returns, off_values)
+        value_loss = F.mse_loss(returns, values)
 
         loss = policy_loss + value_loss
 
@@ -73,3 +77,10 @@ class GAE(nn.Module):
         action = distribution.sample().item()
 
         return action, value
+
+    @staticmethod
+    def discounted_cum_sum(x, discount):
+        if isinstance(x, torch.Tensor):
+            x = x.cpu().numpy()
+        cum_sum = lfilter([1], [1, float(-discount)], x[::-1], axis=0)[::-1]
+        return torch.tensor(cum_sum.copy()).float().to(device)

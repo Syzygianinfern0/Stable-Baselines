@@ -32,12 +32,9 @@ def main():
     running_score = deque(maxlen=100)
     scores = []
     steps = 0
-    loss = 0
-    value_loss = 0
-    policy_loss = 0
-    memory = Memory()
 
     for e in range(max_episodes):
+        trajectory = Memory()
         done = False
 
         score = 0
@@ -56,7 +53,7 @@ def main():
 
             action_one_hot = np.zeros(num_actions)
             action_one_hot[action] = 1
-            memory.push(state, next_state, action_one_hot, reward, done, value)
+            trajectory.push(state, next_state, action_one_hot, reward, done, value)
 
             score += reward
             state = next_state
@@ -65,8 +62,7 @@ def main():
         scores.append(score)
         running_score.append(score)
 
-        if batch_size < len(memory):
-            loss, policy_loss, value_loss = GAE.train_model(net, optimizer, memory.sample(batch_size))
+        loss, policy_loss, value_loss = GAE.train_model(net, optimizer, trajectory.sample())
 
         if e % log_interval == 0:
             print(f'{e} episode | score: {np.mean(running_score):.2f}')
