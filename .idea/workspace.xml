@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="Correct Learning Rate and signs">
-      <change afterPath="$PROJECT_DIR$/Policy Gradients/3. Advantage Actor Critic/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Policy Gradients/3. Advantage Actor Critic/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Policy Gradients/3. Advantage Actor Critic/model.py" afterDir="false" />
+    <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/memory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/policy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Restart RL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Restart RL.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/syzygianinfern0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/syzygianinfern0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/2. Actor Critic/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/2. Actor Critic/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/2. Actor Critic/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/2. Actor Critic/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Policy Gradients/REINFORCE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Policy Gradients/4. VPG" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,17 +56,18 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Policy Gradients/4. VPG" />
+      <recent name="$PROJECT_DIR$/Policy Gradients/REINFORCE" />
+      <recent name="$PROJECT_DIR$/Rainbow/3. Double DQN" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Rainbow/2. DQN" />
       <recent name="$PROJECT_DIR$/Rainbow/1. Q Table" />
       <recent name="$PROJECT_DIR$/rainbow/1_Q_Table" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Policy Gradients/REINFORCE" />
-      <recent name="$PROJECT_DIR$/Rainbow/3. Double DQN" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.scratch_1">
+  <component name="RunManager" selected="Python.another vpg">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Restart RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,88 +90,38 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="another vpg" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Restart RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Policy Gradients/3. Advantage Actor Critic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spinup" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Policy Gradients/3. Advantage Actor Critic/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spinup/another vpg.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Restart RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Policy Gradients/2. Actor Critic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Policy Gradients/4. VPG" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Policy Gradients/2. Actor Critic/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Policy Gradients/4. VPG/main.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="model (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Restart RL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Policy Gradients/2. Actor Critic" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Policy Gradients/2. Actor Critic/model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Restart RL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Policy Gradients/3. Advantage Actor Critic" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Policy Gradients/3. Advantage Actor Critic/model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -199,13 +150,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="spin" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Restart RL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Policy Gradients/4. VPG" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Policy Gradients/4. VPG/spin.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="vpg" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Restart RL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spinup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spinup/vpg.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.another vpg" />
+        <item itemvalue="Python.main (2)" />
+        <item itemvalue="Python.vpg" />
+        <item itemvalue="Python.spin" />
         <item itemvalue="Python.scratch_1" />
-        <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.model" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.model (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +234,13 @@
       <workItem from="1576491375873" duration="1955000" />
       <workItem from="1576736248541" duration="5003000" />
       <workItem from="1576753849506" duration="7880000" />
-      <workItem from="1576816198844" duration="703000" />
+      <workItem from="1576816198844" duration="1945000" />
+      <workItem from="1576836178026" duration="3000" />
+      <workItem from="1576836266285" duration="6000" />
+      <workItem from="1576836400063" duration="2000" />
+      <workItem from="1577299768700" duration="624000" />
+      <workItem from="1577347944714" duration="11914000" />
+      <workItem from="1577403333834" duration="1956000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -395,7 +396,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576768341654</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Correct Learning Rate and Adjust Formatting">
+      <created>1576816923421</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1576816923421</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add Advantage function">
+      <created>1576816964398</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1576816964398</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +452,9 @@
     <MESSAGE value="Model added" />
     <MESSAGE value="Add Train Script" />
     <MESSAGE value="Adjust Loss Functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjust Loss Functions" />
+    <MESSAGE value="Correct Learning Rate and Adjust Formatting" />
+    <MESSAGE value="Add Advantage function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Advantage function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="182" width="800" height="678" key="#Inspections" timestamp="1576128826690">
@@ -456,63 +473,67 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="686" y="326" width="703" height="391" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1043@0.0.1920.1043" timestamp="1576160549581" />
-    <state x="317" y="445" width="862" height="576" key="#xdebugger.evaluate" timestamp="1576739723740">
+    <state x="730" y="214" width="456" height="613" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1577358848470">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="317" y="445" width="862" height="576" key="#xdebugger.evaluate/0.0.1920.1043@0.0.1920.1043" timestamp="1576739723740" />
-    <state x="244" y="90" width="777" height="806" key="CommitChangelistDialog2" timestamp="1576816928928">
+    <state x="730" y="214" width="456" height="613" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1577358848470" />
+    <state x="887" y="319" width="862" height="576" key="#xdebugger.evaluate" timestamp="1577403388778">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576816928928" />
+    <state x="887" y="319" width="862" height="576" key="#xdebugger.evaluate/0.0.1920.1043@0.0.1920.1043" timestamp="1577403388778" />
+    <state x="244" y="90" width="777" height="806" key="CommitChangelistDialog2" timestamp="1576816963892">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1576816963892" />
     <state x="181" y="80" width="777" height="806" key="CommitChangelistDialog2/0.0.3840.1043@0.0.3840.1043" timestamp="1576768341058" />
-    <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl" timestamp="1576135630119">
+    <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl" timestamp="1576836268917">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl/0.0.1920.1043@0.0.1920.1043" timestamp="1576135630119" />
-    <state width="1876" height="372" key="GridCell.Tab.0.bottom" timestamp="1576774519174">
-      <screen x="0" y="0" width="3840" height="1043" />
+    <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl/0.0.1920.1043@0.0.1920.1043" timestamp="1576836268917" />
+    <state width="1876" height="340" key="GridCell.Tab.0.bottom" timestamp="1577403391575">
+      <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state width="1876" height="372" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576740180478" />
+    <state width="1876" height="340" key="GridCell.Tab.0.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1577403391575" />
     <state width="1876" height="372" key="GridCell.Tab.0.bottom/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519174" />
-    <state width="1876" height="372" key="GridCell.Tab.0.center" timestamp="1576774519174">
-      <screen x="0" y="0" width="3840" height="1043" />
-    </state>
-    <state width="1876" height="372" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576740180477" />
-    <state width="1876" height="372" key="GridCell.Tab.0.center/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519174" />
-    <state width="1876" height="372" key="GridCell.Tab.0.left" timestamp="1576774519173">
-      <screen x="0" y="0" width="3840" height="1043" />
-    </state>
-    <state width="1876" height="372" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576740180477" />
-    <state width="1876" height="372" key="GridCell.Tab.0.left/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519173" />
-    <state width="1876" height="372" key="GridCell.Tab.0.right" timestamp="1576774519174">
-      <screen x="0" y="0" width="3840" height="1043" />
-    </state>
-    <state width="1876" height="372" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576740180478" />
-    <state width="1876" height="372" key="GridCell.Tab.0.right/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519174" />
-    <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1576765889538">
-      <screen x="0" y="0" width="3840" height="1043" />
-    </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1576739725645" />
-    <state width="1876" height="340" key="GridCell.Tab.1.bottom/0.0.3840.1043@0.0.3840.1043" timestamp="1576765889538" />
-    <state width="1876" height="340" key="GridCell.Tab.1.center" timestamp="1576765889538">
-      <screen x="0" y="0" width="3840" height="1043" />
-    </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.center/0.0.1920.1043@0.0.1920.1043" timestamp="1576739725644" />
-    <state width="1876" height="340" key="GridCell.Tab.1.center/0.0.3840.1043@0.0.3840.1043" timestamp="1576765889538" />
-    <state width="1876" height="340" key="GridCell.Tab.1.left" timestamp="1576765889538">
-      <screen x="0" y="0" width="3840" height="1043" />
-    </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.left/0.0.1920.1043@0.0.1920.1043" timestamp="1576739725644" />
-    <state width="1876" height="340" key="GridCell.Tab.1.left/0.0.3840.1043@0.0.3840.1043" timestamp="1576765889538" />
-    <state width="1876" height="340" key="GridCell.Tab.1.right" timestamp="1576765889538">
-      <screen x="0" y="0" width="3840" height="1043" />
-    </state>
-    <state width="1876" height="340" key="GridCell.Tab.1.right/0.0.1920.1043@0.0.1920.1043" timestamp="1576739725644" />
-    <state width="1876" height="340" key="GridCell.Tab.1.right/0.0.3840.1043@0.0.3840.1043" timestamp="1576765889538" />
-    <state x="775" y="234" width="360" height="574" key="RollbackChangesDialog" timestamp="1576149865914">
+    <state width="1876" height="340" key="GridCell.Tab.0.center" timestamp="1577403391574">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="775" y="234" width="360" height="574" key="RollbackChangesDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1576149865914" />
+    <state width="1876" height="340" key="GridCell.Tab.0.center/0.0.1920.1043@0.0.1920.1043" timestamp="1577403391574" />
+    <state width="1876" height="372" key="GridCell.Tab.0.center/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519174" />
+    <state width="1876" height="340" key="GridCell.Tab.0.left" timestamp="1577403391574">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state width="1876" height="340" key="GridCell.Tab.0.left/0.0.1920.1043@0.0.1920.1043" timestamp="1577403391574" />
+    <state width="1876" height="372" key="GridCell.Tab.0.left/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519173" />
+    <state width="1876" height="340" key="GridCell.Tab.0.right" timestamp="1577403391574">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state width="1876" height="340" key="GridCell.Tab.0.right/0.0.1920.1043@0.0.1920.1043" timestamp="1577403391574" />
+    <state width="1876" height="372" key="GridCell.Tab.0.right/0.0.3840.1043@0.0.3840.1043" timestamp="1576774519174" />
+    <state width="1876" height="340" key="GridCell.Tab.1.bottom" timestamp="1577403391575">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state width="1876" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1043@0.0.1920.1043" timestamp="1577403391575" />
+    <state width="1876" height="340" key="GridCell.Tab.1.bottom/0.0.3840.1043@0.0.3840.1043" timestamp="1576765889538" />
+    <state width="1876" height="340" key="GridCell.Tab.1.center" timestamp="1577403391575">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state width="1876" height="340" key="GridCell.Tab.1.center/0.0.1920.1043@0.0.1920.1043" timestamp="1577403391575" />
+    <state width="1876" height="340" key="GridCell.Tab.1.center/0.0.3840.1043@0.0.3840.1043" timestamp="1576765889538" />
+    <state width="1876" height="340" key="GridCell.Tab.1.left" timestamp="1577403391575">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state width="1876" height="340" key="GridCell.Tab.1.left/0.0.1920.1043@0.0.1920.1043" timestamp="1577403391575" />
+    <state width="1876" height="340" key="GridCell.Tab.1.left/0.0.3840.1043@0.0.3840.1043" timestamp="1576765889538" />
+    <state width="1876" height="340" key="GridCell.Tab.1.right" timestamp="1577403391575">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state width="1876" height="340" key="GridCell.Tab.1.right/0.0.1920.1043@0.0.1920.1043" timestamp="1577403391575" />
+    <state width="1876" height="340" key="GridCell.Tab.1.right/0.0.3840.1043@0.0.3840.1043" timestamp="1576765889538" />
+    <state x="775" y="234" width="360" height="574" key="RollbackChangesDialog" timestamp="1577403539950">
+      <screen x="0" y="0" width="1920" height="1043" />
+    </state>
+    <state x="775" y="234" width="360" height="574" key="RollbackChangesDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1577403539950" />
     <state width="498" height="445" key="SwitcherDM" timestamp="1576148834782">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
@@ -527,18 +548,30 @@
     <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1043@0.0.1920.1043" timestamp="1576044463096" />
     <state x="1246" y="229" width="1344" height="678" key="search.everywhere.popup/0.0.3840.1043@0.0.3840.1043" timestamp="1576765411593" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Policy Gradients/4. VPG/policy.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Restart_RL$model__1_.coverage" NAME="model (1) Coverage Results" MODIFIED="1576767708879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Policy Gradients/2. Actor Critic" />
     <SUITE FILE_PATH="coverage/Restart_RL$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1576773295606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Policy Gradients/3. Advantage Actor Critic" />
-    <SUITE FILE_PATH="coverage/Restart_RL$main__4_.coverage" NAME="main (4) Coverage Results" MODIFIED="1576164418718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/9. Rainbow" />
     <SUITE FILE_PATH="coverage/Restart_RL$model.coverage" NAME="model Coverage Results" MODIFIED="1576769751756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Policy Gradients/3. Advantage Actor Critic" />
     <SUITE FILE_PATH="coverage/Restart_RL$scratch_2.coverage" NAME="scratch_2 Coverage Results" MODIFIED="1576060538258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/Restart_RL$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1576740065882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Policy Gradients/REINFORCE" />
-    <SUITE FILE_PATH="coverage/Restart_RL$main.coverage" NAME="main Coverage Results" MODIFIED="1576768475249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Policy Gradients/2. Actor Critic" />
-    <SUITE FILE_PATH="coverage/Restart_RL$scratch_1.coverage" NAME="scratch_1 Coverage Results" MODIFIED="1576773404101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/Restart_RL$scratch_1.coverage" NAME="scratch_1 Coverage Results" MODIFIED="1577300848620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/Restart_RL$config.coverage" NAME="config Coverage Results" MODIFIED="1576146047138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/6. PER" />
     <SUITE FILE_PATH="coverage/Restart_RL$from_torch.coverage" NAME="from torch Coverage Results" MODIFIED="1576767607724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Policy Gradients/2. Actor Critic" />
+    <SUITE FILE_PATH="coverage/Restart_RL$vpg.coverage" NAME="vpg Coverage Results" MODIFIED="1577359029559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spinup" />
     <SUITE FILE_PATH="coverage/Restart_RL$test_dqn.coverage" NAME="test dqn Coverage Results" MODIFIED="1576062939340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Restart_RL$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1576162070066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/8. Multi Step" />
+    <SUITE FILE_PATH="coverage/Restart_RL$main__4_.coverage" NAME="main (4) Coverage Results" MODIFIED="1576164418718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rainbow/9. Rainbow" />
+    <SUITE FILE_PATH="coverage/Restart_RL$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1576740065882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Policy Gradients/REINFORCE" />
+    <SUITE FILE_PATH="coverage/Restart_RL$main.coverage" NAME="main Coverage Results" MODIFIED="1576768475249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Policy Gradients/2. Actor Critic" />
+    <SUITE FILE_PATH="coverage/Restart_RL$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1577403367115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Policy Gradients/4. VPG" />
   </component>
 </project>
