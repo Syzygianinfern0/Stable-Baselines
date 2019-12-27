@@ -6,8 +6,8 @@ import torch.optim as optim
 from tensorboardX import SummaryWriter
 
 from config import *
-from policy import VPG
 from memory import Memory
+from policy import VPG
 
 
 def main():

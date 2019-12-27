@@ -1,11 +1,11 @@
-import numpy as np
 import torch
 import torch.nn as nn
 # noinspection PyPep8Naming
 import torch.nn.functional as F
+from scipy.signal import lfilter
 from torch.distributions import Categorical
 
-from config import gamma, device
+from config import device, gamma
 
 
 class VPG(nn.Module):
@@ -25,16 +25,21 @@ class VPG(nn.Module):
         return logits
 
     @classmethod
-    def train_model(cls, net, optimizer, trajectory):
+    def train_model(cls, net, optimizer, trajectory, rtg=True):
         states = torch.stack(trajectory.state).to(device)
         actions = torch.tensor(trajectory.action).to(device)
-        rewards = torch.tensor(trajectory.reward).to(device)
+        # rewards = torch.tensor(trajectory.reward).to(device)
+        rewards = trajectory.reward
 
         logits = net(states).squeeze()
         log_probs = F.log_softmax(logits)
         sum_log_probs = torch.sum(log_probs * actions, dim=1)
-        weights = torch.sum(rewards)
-        g = sum_log_probs * weights
+
+        if rtg:
+            weights = lfilter([1], [1, float(-gamma)], list(rewards)[::-1], axis=0)[::-1]
+        else:
+            weights = torch.sum(rewards)
+        g = sum_log_probs * torch.tensor(weights.copy()).to(device)
 
         loss = -1 * torch.mean(g)
         optimizer.zero_grad()
