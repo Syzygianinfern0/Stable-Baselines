@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="Vanilla Model Added">
+    <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/Test.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/4. VPG/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Policy Gradients/4. VPG/policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/policy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/4. VPG/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/4. VPG/logs/events.out.tfevents.1577406666.azkaban" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/4. VPG/trained.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/4. VPG/trained.pth" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,15 +55,15 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Policy Gradients/4. VPG" />
-      <recent name="$PROJECT_DIR$/Policy Gradients/REINFORCE" />
-      <recent name="$PROJECT_DIR$/Rainbow/3. Double DQN" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Rainbow/2. DQN" />
       <recent name="$PROJECT_DIR$/Rainbow/1. Q Table" />
       <recent name="$PROJECT_DIR$/rainbow/1_Q_Table" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Policy Gradients/4. VPG" />
+      <recent name="$PROJECT_DIR$/Policy Gradients/REINFORCE" />
+      <recent name="$PROJECT_DIR$/Rainbow/3. Double DQN" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main (2)">
@@ -146,20 +149,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="spin" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sac" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Restart RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Policy Gradients/4. VPG" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spinup" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Policy Gradients/4. VPG/spin.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spinup/sac.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -193,10 +193,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main (2)" />
+        <item itemvalue="Python.sac" />
         <item itemvalue="Python.policy" />
         <item itemvalue="Python.another vpg" />
         <item itemvalue="Python.vpg" />
-        <item itemvalue="Python.spin" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +236,7 @@
       <workItem from="1576836400063" duration="2000" />
       <workItem from="1577299768700" duration="624000" />
       <workItem from="1577347944714" duration="11914000" />
-      <workItem from="1577403333834" duration="2915000" />
+      <workItem from="1577403333834" duration="4884000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>
@@ -413,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577405795301</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Don't let the past distract you">
+      <created>1577406954437</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1577406954437</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +440,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add ignore, optim imports" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="DQN" />
     <MESSAGE value="DQN Models and Memory" />
     <MESSAGE value="DQN Train script complete" />
@@ -458,7 +466,11 @@
     <MESSAGE value="Correct Learning Rate and Adjust Formatting" />
     <MESSAGE value="Add Advantage function" />
     <MESSAGE value="Vanilla Model Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vanilla Model Added" />
+    <MESSAGE value="Don't let the past distract you" />
+    <option name="LAST_COMMIT_MESSAGE" value="Don't let the past distract you" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="182" width="800" height="678" key="#Inspections" timestamp="1576128826690">
@@ -485,10 +497,10 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="887" y="319" width="862" height="576" key="#xdebugger.evaluate/0.0.1920.1043@0.0.1920.1043" timestamp="1577406314139" />
-    <state x="244" y="90" width="777" height="806" key="CommitChangelistDialog2" timestamp="1577405852776">
+    <state x="244" y="90" width="777" height="806" key="CommitChangelistDialog2" timestamp="1577406953437">
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
-    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1577405852776" />
+    <state x="244" y="90" width="986" height="823" key="CommitChangelistDialog2/0.0.1920.1043@0.0.1920.1043" timestamp="1577406953437" />
     <state x="181" y="80" width="777" height="806" key="CommitChangelistDialog2/0.0.3840.1043@0.0.3840.1043" timestamp="1576768341058" />
     <state x="743" y="279" width="424" height="485" key="FileChooserDialogImpl" timestamp="1576836268917">
       <screen x="0" y="0" width="1920" height="1043" />
