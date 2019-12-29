@@ -4,7 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/spinup" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/fireup" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Policy Gradients/5. GAE" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Policy Gradients/6. TRPO" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
