@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Policy Gradients/6. TRPO/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Policy Gradients/6. TRPO/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Policy Gradients/6. TRPO/memory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Policy Gradients/6. TRPO/policy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Restart RL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Restart RL.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/syzygianinfern0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/syzygianinfern0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/6. TRPO/policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/6. TRPO/policy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +64,7 @@
       <recent name="$PROJECT_DIR$/Rainbow/3. Double DQN" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.scratch_1">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Restart RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,20 +109,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="scratch_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Restart RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -204,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.scratch_1" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.vpg (1)" />
         <item itemvalue="Python.vpg" />
         <item itemvalue="Python.sspin" />
-        <item itemvalue="Python.scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +244,9 @@
       <workItem from="1577452920182" duration="6107000" />
       <workItem from="1577469245978" duration="5127000" />
       <workItem from="1577551473958" duration="1212000" />
-      <workItem from="1577618033045" duration="1494000" />
+      <workItem from="1577618033045" duration="2090000" />
+      <workItem from="1577691538532" duration="460000" />
+      <workItem from="1577709189485" duration="829000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>

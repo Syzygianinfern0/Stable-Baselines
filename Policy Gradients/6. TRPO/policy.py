@@ -5,6 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from scipy.signal import lfilter
 from torch.distributions import Categorical
+from torch.nn.utils import parameters_to_vector
 
 from config import device, gamma, lmbda, cg_iters, eps
 
@@ -101,3 +102,24 @@ class GAE(nn.Module):
             p = r + (r_dot_new / r_dot_old) * p
             r_dot_old = r_dot_new
         return x
+
+    @classmethod
+    def hessian_vector_product(cls, D_kl, module, x, retain=True):
+        gradients = torch.autograd.grad(
+            D_kl, module.parameters(),
+            create_graph=True
+        )
+
+        flat_gradients = cls.flat_grad(gradients)
+        flat_gradients = (flat_gradients * x).sum()
+
+        hessian = torch.autograd.grad(
+            flat_gradients, module.parameters(),
+            retain_graph=retain
+        )
+
+        return cls.flat_grad(hessian)
+
+    @staticmethod
+    def flat_grad(grad):
+        return parameters_to_vector(grad)
