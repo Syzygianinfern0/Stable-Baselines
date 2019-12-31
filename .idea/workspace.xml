@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65a23725-f436-4e08-a8d0-5c6c28619807" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Policy Gradients/6. TRPO/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/6. TRPO/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Policy Gradients/6. TRPO/policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Policy Gradients/6. TRPO/policy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +114,9 @@
       <module name="Restart RL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -246,7 +250,10 @@
       <workItem from="1577551473958" duration="1212000" />
       <workItem from="1577618033045" duration="2090000" />
       <workItem from="1577691538532" duration="460000" />
-      <workItem from="1577709189485" duration="829000" />
+      <workItem from="1577709189485" duration="3664000" />
+      <workItem from="1577775887999" duration="571000" />
+      <workItem from="1577797729624" duration="707000" />
+      <workItem from="1577799746315" duration="1828000" />
     </task>
     <task id="LOCAL-00001" summary="Add ignore, optim imports">
       <created>1576051789830</created>

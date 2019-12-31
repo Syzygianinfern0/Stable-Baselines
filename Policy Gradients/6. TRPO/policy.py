@@ -7,7 +7,7 @@ from scipy.signal import lfilter
 from torch.distributions import Categorical
 from torch.nn.utils import parameters_to_vector
 
-from config import device, gamma, lmbda, cg_iters, eps
+from config import device, gamma, lmbda, cg_iters, eps, damping_coeff, delta, epsilon
 
 
 class GAE(nn.Module):
@@ -41,29 +41,35 @@ class GAE(nn.Module):
         dones = torch.tensor(batch.done).to(device)
         values = torch.tensor(batch.value).to(device)
 
-        # if dones[-1] == True:
-        #     torch.cat([rewards, 0], )
-
         deltas = rewards[:-1] + gamma * values[1:] - values[:-1]
 
         advantages = cls.discounted_cum_sum(deltas, gamma * lmbda)
         returns = cls.discounted_cum_sum(rewards, gamma)
 
-        # advantages, returns = torch.tensor(advantages.copy()).to(device), torch.tensor(returns.copy()).to(device)
-
         mu, dev = advantages.mean(), advantages.std()
         advantages = (advantages - mu) / dev
 
         logits, _ = net(states)
-        # logits, off_values = logits.squeeze(), off_values.squeeze()
 
         log_probs = F.log_softmax(logits.squeeze())
         sum_log_probs = torch.sum(log_probs * actions, dim=1)
-        policy_loss = -1 * torch.mean(sum_log_probs[:-1] * advantages)
 
+        old_log_probs = F.log_softmax(logits.squeeze())
+        old_sum_log_probs = torch.sum(log_probs * actions, dim=1)
+
+        D_kl = cls.kl(log_probs, old_log_probs)
+        ratio = (sum_log_probs - old_sum_log_probs).exp()
+
+        # policy_loss = -1 * torch.mean(sum_log_probs[:-1] * advantages)
+        policy_loss = -1 * torch.mean(ratio * advantages)
         value_loss = F.mse_loss(returns, values)
-
+        g = parameters_to_vector(torch.autograd.grad(policy_loss, net.policy.parameters(), retain_graph=True))
         loss = policy_loss + value_loss
+
+        x = cls.conjucate_gradient(cls.Hx, g, D_kl, net)
+
+        alpha = torch.sqrt(2*delta/(torch.dot(x, cls.Hx(net, x, D_kl)) + epsilon))
+        old_params = parameters_to_vector(net.policy.parameters())
 
         optimizer.zero_grad()
         loss.backward()
@@ -88,13 +94,13 @@ class GAE(nn.Module):
         return torch.tensor(cum_sum.copy()).float().to(device)
 
     @staticmethod
-    def conjucate_gradient(Ax, b):
+    def conjucate_gradient(Ax, b, D_kl, net):
         x = np.zeros_like(b)
         r = b.copy()  # Note: should be 'b - Ax(x)', but for x=0, Ax(x)=0. Change if doing warm start.
         p = r.copy()
         r_dot_old = np.dot(r, r)
         for _ in range(cg_iters):
-            z = Ax(p)
+            z = Ax(net, p, D_kl)
             alpha = r_dot_old / (np.dot(p, z) + eps)
             x += alpha * p
             r -= alpha * z
@@ -120,6 +126,17 @@ class GAE(nn.Module):
 
         return cls.flat_grad(hessian)
 
+    @classmethod
+    def Hx(cls, net, x, d_kl):
+        hvp = cls.hessian_vector_product(d_kl, net.policy, x)
+        if damping_coeff > 0:
+            hvp += damping_coeff * x
+        return hvp
+
     @staticmethod
     def flat_grad(grad):
         return parameters_to_vector(grad)
+
+    @staticmethod
+    def kl(logp0, logp1):
+        return (logp1.exp() * (logp1 - logp0)).sum(1).mean()
